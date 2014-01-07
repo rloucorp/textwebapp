@@ -1,0 +1,9 @@
+import os
+import sys
+import json
+from jinja2 import Environment, FileSystemLoader
+
+args = sys.argv
+env = Environment(loader=FileSystemLoader(os.getcwd()))
+data = json.load(open(args[2]))
+print env.get_template(args[1]).render(data)

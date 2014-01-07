@@ -1,0 +1,4 @@
+
+{% block css %}
+	{{ link_tag('main') }}
+{% endblock %}

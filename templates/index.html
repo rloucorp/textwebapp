@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block css %}
+{% endblock %}
+
+
+{% block intro %}
+	<h1>Text Sharing Web Application</h1>
+	{% for excerpt in excerpts %}
+		<blockquote>
+			<p>{{excerpt.content}}</p>
+			<small>{{excerpt.author}} <cite title="Source Title">{{excerpt.title}} ({{excerpt.year}})</cite></small>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Disable Author Data (why does this span the whole page?)
+				</label>
+			</div>
+		</blockquote>
+	{% endfor %}	
+	
+	<p>^^ cycle through different famous first lines of novels</p>
+	<p>Let's collaborate together to create the worlds first library of crowdsourced stories, diaries, lyrics, etc. There are no limits; any type of text content is acceptable. The voting process will highlight the most popular content so other users may add to it. If a story takes a complete different directions, that it completely encouraged! This is a experiment to see what comes out. Link specific content to your friends and share via social media/email/etc. Create your own private branches if you have a specific group  of people you would like to collaborate with. Use it as you see fit!</p>
+	<h3>Above content should be on seperate intro page</h3>
+	<br><br>
+{% endblock %}
+
+
+{% block table %}
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th>Sample Header 1</th>
+			<th>Sample Header 2</th>
+			<th>Sample Header 3</th>
+		</tr>
+	    {% for row in rows %}
+			<tr>
+				<td>{{row.content}}</td>
+				<td>{{row.score}}</td>
+				<td>{{row.address}}</td>
+			</tr>
+		{% endfor %}	
+	</table>    
+{% endblock %}

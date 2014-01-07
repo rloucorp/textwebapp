@@ -1,0 +1,5 @@
+{ "rows": [
+        {"content": "Content1", "score": 150, "link": "http://google.com"},
+        {"title": "Content2", "score": 50, "link": "http://bing.com"}
+    ]
+}

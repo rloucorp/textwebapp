@@ -1,9 +1,12 @@
-l<!DOCTYPE html>
+{% from 'util.jinja2.html' import link_tag, script_tag, tracked_link %}
+
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>TextWebApp {% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
+	{{ link_tag('lib/bootstrap') }}
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,7 +33,7 @@ l<!DOCTYPE html>
 
 <p>Let's collaborate together to create the worlds first library of crowdsourced stories, diaries, lyrics, etc. There are no limits; any type of text content is acceptable. The voting process will highlight the most popular content so other users may add to it. If a story takes a complete different directions, that it completely encouraged! This is a experiment to see what comes out. Link specific content to your friends and share via social media/email/etc. Create your own private branches if you have a specific group  of people you would like to collaborate with. Use it as you see fit!</p>
 
-<h2>Above content should be on seperate intro page</h2>
+<h3>Above content should be on seperate intro page</h3>
 
 <br><br>
 
