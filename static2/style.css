@@ -1,0 +1,49 @@
+
+/*body 
+{
+text-align: Center;
+font-family: Century Gothic;
+}
+
+h1
+{
+font-weight:normal;
+}
+
+img
+ {
+ border-style: none;
+ }
+*/
+
+
+body
+{
+background-image: url(images/background/background.gif);
+}
+
+/**************************/
+/*** BOTTOM CONTAINERS **
+
+#container
+{
+margin:0;
+}
+
+.bottom-box
+{
+width:278px;
+height:;
+
+display: inline;
+float:left;
+margin: 10px;
+padding:10px;
+border:0px solid #05C3DE;
+background-image: url(images/backgrounds/wood1.png);
+/*background-color:rgba(176,196,222,.3);*/
+}
+*/
+
+
+
